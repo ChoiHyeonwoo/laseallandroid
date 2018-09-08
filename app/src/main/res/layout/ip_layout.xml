@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사용모드를 선택해주세요!"
+            android:textSize="30dp"
+            android:padding="7dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutRG">
+        <RadioButton
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:text="왼손모드"
+            android:id="@+id/lb"
+            android:checked="false" />
+
+
+        <RadioButton
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="오른손모드"
+            android:id="@+id/rb"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="IP주소를 입력해 주세요!"
+    android:textSize="30dp"
+    android:padding="7dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP는 메뉴에서 수정하실 수 있습니다"
+        android:padding="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0fe0ff"
+        android:id="@+id/ip_Et1"
+        android:hint="ex) 192.168.0.00"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP주소 확인하는 방법"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="Windows"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="1. 실행창에 cmd를 입력\n2. ipconfig 입력\n3. ip 주소 확인"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="Mac"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="1. 검색창에 '네트워크 유틸리티' 입력\n2. IP주소 확인"/>
+
+</LinearLayout>

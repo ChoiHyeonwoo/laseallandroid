@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3C"
+    android:orientation="vertical"
+    android:id="@+id/main_ll"
+    tools:context=".RightMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.59"
+        android:background="#3C3C3C" >
+
+        <ImageButton
+            android:id="@+id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3C3C3C"
+            android:clickable="true"
+            android:src="@drawable/red_circle"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_direction"
+            android:background="#3C3C3C"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/goBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_direction"
+            android:background="#3C3C3C"
+            android:layout_weight="4.59"
+            android:paddingRight="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="#3C3C3C"
+        android:weightSum="1"
+        android:layout_below="@+id/backBtn"
+        android:layout_alignEnd="@+id/backBtn"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/paintPage"
+            android:scaleType="fitCenter"
+            android:background="@drawable/main_btn"
+            android:src="@drawable/paint"
+            android:layout_weight="2.25"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/stringPage" />
+
+            <ImageButton
+                android:id="@+id/stringPage"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pencil"
+                android:background="@drawable/main_btn2"
+                android:scaleType="fitCenter"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/mousePage"
+                android:src="@drawable/mousebutton"
+                android:background="@drawable/main_btn3"
+                android:scaleType="fitCenter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/stringPage" />
+
+            <!--<ImageButton-->
+                <!--android:layout_width="82dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/additional"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:background="#3C3C3C"-->
+                <!--android:src="@drawable/figure"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentEnd="true" />-->
+
+    </RelativeLayout>
+</LinearLayout>
